@@ -1,0 +1,360 @@
+body{
+    background:#f9f8f6;
+    color: var(--textColor);
+    font-family:"FuturaPT-Book", "Arial";
+    border-top: 1px solid var(--textColor);
+    margin: 0;
+    overflow-x: hidden;
+    --textColor:#5d4540;
+    --bgColor:#f9f8f6;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-top: -3em;
+}
+.logo{
+    width: 10em;
+    margin-right: 5rem;
+}
+.header{
+   margin-top: 3em;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--textColor);
+}
+.li{
+    margin-left: 3em;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.firstPage{
+    background: var(--bgColor);
+    width: 100em;
+    height: 100em;
+    position: fixed;
+}
+.firstPage img{
+    width: 13em;
+    position: fixed;
+   margin-left: 38em;
+   margin-top: 17em;
+}
+.fade{
+    animation: fade 1;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes fade{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.rightList{
+    font-size: 12px;
+    margin-top: 1em;
+    margin-left: 80em;
+    letter-spacing: 2px;
+}
+.line{
+    width: 32px;
+    height: 2px;
+    background-color: var(--textColor);
+    margin-top: 6px;
+}
+.line1{
+    width: 22px;
+    height: 2px;
+    background-color: var(--textColor);
+    margin-left: 77.5em;
+    margin-top: -1.7em;
+}
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .navItems {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .nav a:hover{
+    color: #f1f1f1;
+  }
+  .nav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .video{
+    width: 75em;
+    margin-top: 3em;
+    margin-left: 5em;
+  }
+  .border{
+    max-width: 12em;
+   padding: .5px;
+    background: linear-gradient(to right, #5d4540 52%, #f1f1f1 40%);  
+    margin-left: 36.5em;
+    transform: rotate(-90deg);
+  }
+  .about{
+    text-align: center;
+  }
+  .aboutp{
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+  .gallery p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .gallery h1{
+    text-align: center;
+    font-family: "Krylon";
+    font-weight: normal;
+    font-size: 2.5em;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 98.5%;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--textColor);
+    font-size: 20px;
+    user-select: none;
+    font-weight: lighter;
+  }
+  .next{
+    right: 40%;
+  }
+  .prev{
+    left: 39%;
+  }
+  .mySlides {
+    display: none
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.numbertext{
+    text-align: center;
+    margin-top: 2em;
+    letter-spacing: 6px;
+    font-size: 15px;
+}
+.mySlides img{
+    width: 80%;
+    height: 90%;
+    box-shadow: 0px 0px 20px 0px #5555;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+    margin-top: 4em;
+}
+.menus{
+    text-align: center;
+}
+.menus h1, .discover h1{
+    font-family: "Krylon";
+    font-weight: normal;
+    font-size: 2.5em;
+}
+.Menu img{
+    width: 30em;
+    border: 1px solid var(--textColor);
+    padding: 1em;
+}
+.Menu h1{
+    position: absolute;
+    font-family: "Krylon";
+    font-weight: 500;
+    font-size: 1.8em;
+    margin-left: 9em;
+}
+.border2{
+    width: 56em;
+   padding: .5px;
+   background-color: var(--textColor);
+   position: absolute;
+   transform: rotate(90deg);
+   margin-top: -19em;
+   margin-left: 14.7em;
+}
+.Menu p{
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: 21em;
+    margin-top: 5.6rem;
+    border-bottom:1px solid var(--textColor);
+    padding-bottom:2px;
+}
+
+.discover img{
+  margin-top: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.discover{
+  text-align: center;
+}
+.discover p{
+  font-size: 1.2em;
+  margin-top: 2em;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.footer{
+  width: 100%;
+  height: 32em;
+  background: var(--textColor);
+  color: var(--bgColor);
+  padding: 2em;
+}
+.title{
+  font-family: "Krylon";
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.address p{
+ letter-spacing: 1.5px;
+  line-height: 1.7;
+  font-size: 14.5px;
+  font-weight: lighter;
+  margin-top: 2em;
+}
+.hours{
+  margin-top: -9.2rem;
+  margin-left: 19rem;
+}
+.hours p{
+  line-height: 1.7;
+  letter-spacing: 2px;
+  font-size: 14.3px;
+  font-weight: lighter;
+  margin-top: 2em;
+}
+a.here{
+  color: var(--bgColor);
+}
+.reserve{
+ margin-top: -23rem;
+ margin-left: 40em;
+}
+.reserve p{
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+  font-size: 14.3px;
+  font-weight: lighter;
+  margin-top: 2em;
+}
+.newsletter{
+  margin-top: -7.5rem;
+  margin-left: 67em;
+}
+.newsletter img{
+  width: 13em;
+  position: absolute;
+  margin-top: 19rem;
+  margin-left: 2rem;
+}
+#field{
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--bgColor);
+  font-style: italic;
+  border-bottom: 1px solid var(--bgColor);
+  width: 20em;
+  margin-left: -3rem;
+  padding-bottom: 5px;
+}
+#newsTitle{
+  text-align: right;
+  margin-right: 5rem;
+  margin-bottom: 1.5em;
+}
+#mybtn{
+  background: none;
+  border: none;
+  color: var(--bgColor);
+  margin-left: 12rem;
+  position: absolute;
+  opacity: 0.9;
+}
+.copy{
+  position: absolute;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 20.2rem;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+.last{
+  margin-top: 15rem;
+}
+.here:hover{
+  text-decoration: underline;
+}
+.socials{
+  position: absolute;
+ margin-left: 60rem;
+ margin-top: 23rem;
+ font-size: 12px;
+ letter-spacing: 1.5px;
+ display: inline-flex;
+ width: 100%;
+}
+.socials p{
+  margin-right: 1em;
+  opacity: 0.8;
+}
+a.social{
+  color: var(--bgColor);
+}
+a.social:hover{
+  opacity: 1;
+  color: white;
+  font-size: 13px;
+}
+
+
+
+
+
+  
+  
